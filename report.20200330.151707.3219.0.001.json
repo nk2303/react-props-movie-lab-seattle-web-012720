@@ -1,0 +1,534 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200330.151707.3219.0.001.json",
+    "dumpEventTime": "2020-03-30T15:17:07Z",
+    "dumpEventTimeStamp": "1585606627881",
+    "processId": 3219,
+    "threadId": null,
+    "cwd": "/Users/owner/Development/code/mod4/5.props",
+    "commandLine": [
+      "/Users/owner/.nvm/versions/node/v13.10.1/bin/node",
+      "/Users/owner/Development/code/mod4/5.props/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "--require",
+      "babel-core/register",
+      "--require",
+      "./test/mochacfg.js",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.10.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.10.1",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.3.0",
+    "osVersion": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 73250,
+        "nice": 0,
+        "sys": 48290,
+        "idle": 534210,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9230,
+        "nice": 0,
+        "sys": 5000,
+        "idle": 640800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 58230,
+        "nice": 0,
+        "sys": 34140,
+        "idle": 562740,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9030,
+        "nice": 0,
+        "sys": 4890,
+        "idle": 641100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 51030,
+        "nice": 0,
+        "sys": 22500,
+        "idle": 581550,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9360,
+        "nice": 0,
+        "sys": 4570,
+        "idle": 641060,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 49840,
+        "nice": 0,
+        "sys": 17050,
+        "idle": 588160,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9430,
+        "nice": 0,
+        "sys": 4540,
+        "idle": 641010,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "ac:bc:32:9f:3c:3f",
+        "address": "fe80::c51:4bea:d1fc:3412",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "ac:bc:32:9f:3c:3f",
+        "address": "192.168.1.31",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "9e:05:57:6a:54:43",
+        "address": "fe80::9c05:57ff:fe6a:5443",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "9e:05:57:6a:54:43",
+        "address": "fe80::9c05:57ff:fe6a:5443",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::9899:e9ee:6dfa:3c5f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::dcb8:c621:df85:9334",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      }
+    ],
+    "host": "Owners-MacBook-Pro.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001a73bc",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100096ff7",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001dafd7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001daf73",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035da45",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035f124",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035bebe",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100359ea6",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010036582a",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001003658b1",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100332bf6",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100672e70",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001009aec79",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/owner/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000330ddebe078b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000330ddebd9459",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000330ddebd7813",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000330ddebe2d47",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154455040,
+    "totalCommittedMemory": 2150576440,
+    "usedMemory": 2146840856,
+    "availableMemory": 47490520,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 1007336,
+        "capacity": 2094848,
+        "used": 191944,
+        "available": 1902904
+      },
+      "old_space": {
+        "memorySize": 2134257664,
+        "committedMemory": 2134165776,
+        "capacity": 2131776840,
+        "used": 2131644328,
+        "available": 132512
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 313280,
+        "capacity": 296896,
+        "used": 296896,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1060688,
+        "capacity": 742000,
+        "used": 742000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 13946880,
+        "committedMemory": 13946880,
+        "capacity": 13929864,
+        "used": 13929864,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094848,
+        "used": 0,
+        "available": 2094848
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 59.6756,
+    "kernelCpuSeconds": 1.695,
+    "cpuConsumptionPercent": 175.344,
+    "maxRss": 2290698158080,
+    "pageFaults": {
+      "IORequired": 74,
+      "IONotRequired": 651011
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "TMPDIR": "/var/folders/vg/r_9vcy5n2y54slkj5v_tx32w0000gn/T/",
+    "XPC_FLAGS": "0x0",
+    "TERM_PROGRAM_VERSION": "433",
+    "LANG": "en_US.UTF-8",
+    "TERM_PROGRAM": "Apple_Terminal",
+    "XPC_SERVICE_NAME": "0",
+    "TERM_SESSION_ID": "114D10E1-4DD1-4B83-B007-B543EA0B14EF",
+    "TERM": "xterm-256color",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.dVwuaAeljW/Listeners",
+    "SHELL": "/bin/zsh",
+    "HOME": "/Users/owner",
+    "LOGNAME": "owner",
+    "USER": "owner",
+    "PATH": "/Users/owner/.rvm/gems/ruby-2.6.1/bin:/Users/owner/.rvm/gems/ruby-2.6.1@global/bin:/Users/owner/.rvm/rubies/ruby-2.6.1/bin:/Users/owner/.nvm/versions/node/v13.10.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/owner/.rvm/bin",
+    "SHLVL": "1",
+    "PWD": "/Users/owner/Development/code/mod4/5.props",
+    "OLDPWD": "/Users/owner/Development/code/mod4",
+    "NODE_PATH": "/usr/local/lib/node_modules:",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "VISUAL": "code",
+    "SVN_EDITOR": "code",
+    "GIT_EDITOR": "code",
+    "EDITOR": "code",
+    "FLATIRON_VERSION": "1.1.1",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "NVM_DIR": "/Users/owner/.nvm",
+    "NVM_CD_FLAGS": "-q",
+    "NVM_BIN": "/Users/owner/.nvm/versions/node/v13.10.1/bin",
+    "rvm_prefix": "/Users/owner",
+    "rvm_path": "/Users/owner/.rvm",
+    "rvm_bin_path": "/Users/owner/.rvm/bin",
+    "rvm_version": "1.29.9-next (master)",
+    "GEM_HOME": "/Users/owner/.rvm/gems/ruby-2.6.1",
+    "GEM_PATH": "/Users/owner/.rvm/gems/ruby-2.6.1:/Users/owner/.rvm/gems/ruby-2.6.1@global",
+    "MY_RUBY_HOME": "/Users/owner/.rvm/rubies/ruby-2.6.1",
+    "IRBRC": "/Users/owner/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "rvm_alias_expanded": "",
+    "rvm_bin_flag": "",
+    "rvm_docs_type": "",
+    "rvm_gemstone_package_file": "",
+    "rvm_gemstone_url": "",
+    "rvm_niceness": "",
+    "rvm_nightly_flag": "",
+    "rvm_only_path_flag": "",
+    "rvm_pretty_print_flag": "",
+    "rvm_proxy": "",
+    "rvm_quiet_flag": "",
+    "rvm_ruby_bits": "",
+    "rvm_ruby_file": "",
+    "rvm_ruby_make": "",
+    "rvm_ruby_make_install": "",
+    "rvm_ruby_mode": "",
+    "rvm_script_name": "",
+    "rvm_sdk": "",
+    "rvm_silent_flag": "",
+    "rvm_use_flag": "",
+    "rvm_hook": "",
+    "_": "/Users/owner/.rvm/gems/ruby-2.6.1/bin/learn",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_GEM_HOME": "/Users/owner/.rvm/gems/ruby-2.6.1",
+    "BUNDLER_ORIG_GEM_PATH": "/Users/owner/.rvm/gems/ruby-2.6.1:/Users/owner/.rvm/gems/ruby-2.6.1@global",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_PATH": "/Users/owner/.rvm/gems/ruby-2.6.1/bin:/Users/owner/.rvm/gems/ruby-2.6.1@global/bin:/Users/owner/.rvm/rubies/ruby-2.6.1/bin:/Users/owner/.nvm/versions/node/v13.10.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/owner/.rvm/bin",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 2784,
+      "hard": 4176
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/owner/.nvm/versions/node/v13.10.1/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
